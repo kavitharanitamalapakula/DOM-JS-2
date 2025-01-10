@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM-Day-2</title>
+    <style>
+        #container1,
+        #container2 {
+            width: 200px;
+            height: 200px;
+            background-color: rgb(17, 179, 208);
+            margin-bottom: 10px;
+        }
+
+        button {
+            padding: 10px;
+            font-size: 1.1rem;
+        }
+
+        #para {
+            display: none;
+        }
+
+        #container3 {
+            width: 300px;
+            height: 300px;
+            border: 1px solid #ccc;
+            position: relative;
+            margin-top: 20px;
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: #3498db;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        ul {
+            list-style-type: none;
+            /* Removes default list bullets */
+            padding: 0;
+        }
+
+        li {
+            margin: 5px 0;
+            font-size: 1.2rem;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Task-1</h2>
+    <div id="container1">
+        <p id="para">DOM stands for Document Object Model. It is a programming interface that allows us to create,
+            change, or remove elements from the document.</p>
+    </div>
+    <button onclick="add_para()">Click Me To Add Para</button>
+
+    <h2>Task-2</h2>
+    <div id="container2">
+        <p id="para-1">First paragraph</p>
+        <p id="para-2">Second paragraph</p>
+        <p id="para-3">Third paragraph</p>
+    </div>
+    <button id="removeButton" onclick="del_last()">Remove Last Child</button>
+
+    <h2>Task-3</h2>
+    <div id="container" style="width: 300px; height: 300px; border: 1px solid #ccc; position: relative;"></div>
+
+    <!-- Button to toggle the box -->
+    <button id="toggleButton">Toggle Box</button>
+
+    <h2>Task-4</h2>
+    <button id="changeTextButton">Click me!</button>
+    <h2>Task-5</h2>
+    <ul id="list"></ul>
+    <button id="addItemButton">Add Item</button>
+    <button id="removeItemButton">Remove Last Item</button>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
